@@ -101,8 +101,6 @@ namespace QuantLib {
         legs_[0].push_back(fixedCashFlow);
         legs_[1].push_back(inflationCashFlow);
 
-        registerWith(inflationCashFlow);
-
         switch (type_) {
             case Payer:
                 payer_[0] = +1.0;

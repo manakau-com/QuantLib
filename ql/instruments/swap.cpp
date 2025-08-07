@@ -37,10 +37,6 @@ namespace QuantLib {
         legs_[1] = secondLeg;
         payer_[0] = -1.0;
         payer_[1] =  1.0;
-        for (auto& i : legs_[0])
-            registerWith(i);
-        for (auto& i : legs_[1])
-            registerWith(i);
     }
 
     Swap::Swap(const std::vector<Leg>& legs,
@@ -54,8 +50,6 @@ namespace QuantLib {
                    ") and legs (" << legs_.size() << ")");
         for (Size j=0; j<legs_.size(); ++j) {
             if (payer[j]) payer_[j]=-1.0;
-            for (auto& i : legs_[j])
-                registerWith(i);
         }
     }
 
@@ -157,15 +151,6 @@ namespace QuantLib {
         for (Size j=1; j<legs_.size(); ++j)
             d = std::max(d, CashFlows::maturityDate(legs_[j]));
         return d;
-    }
-
-    void Swap::deepUpdate() {
-        for (auto& leg : legs_) {
-            for (auto& k : leg) {
-                k->deepUpdate();
-            }
-        }
-        update();
     }
 
     void Swap::arguments::validate() const {

@@ -80,7 +80,6 @@ namespace QuantLib {
 
 
     Real YoYOptionletHelper::impliedQuote() const {
-        yoyCapFloor_->deepUpdate();
         return yoyCapFloor_->NPV();
     }
 

@@ -97,7 +97,6 @@ namespace QuantLib {
 
 
     Real ZeroCouponInflationSwapHelper::impliedQuote() const {
-        zciis_->deepUpdate();
         return zciis_->fairRate();
     }
 
@@ -188,7 +187,6 @@ namespace QuantLib {
 
 
     Real YearOnYearInflationSwapHelper::impliedQuote() const {
-        yyiis_->deepUpdate();
         return yyiis_->fairRate();
     }
 

@@ -50,19 +50,6 @@ namespace QuantLib {
           default:
             QL_FAIL("Unknown Irregular-swap type");
         }
-
-        //Fixed leg
-        legs_[0] = fixLeg;
-
-        for (auto i = legs_[0].begin(); i < legs_[0].end(); ++i)
-            registerWith(*i);
-        
-        //Floating Leg
-        legs_[1] = floatLeg;
-
-        for (auto i = legs_[1].begin(); i < legs_[1].end(); ++i)
-            registerWith(*i);
-
     }
 
 

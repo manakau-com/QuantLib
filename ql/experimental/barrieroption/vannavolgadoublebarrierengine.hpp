@@ -263,7 +263,6 @@ namespace QuantLib {
                      // BS vega
                      ext::static_pointer_cast<SimpleQuote>(atmVolQuote.currentLink())
                          ->setValue(atmVolQuote->value() + sigmaShift_vega);
-                     doubleBarrierOption.recalculate();
                      Real vegaBarBS = (doubleBarrierOption.NPV() - priceBS) / sigmaShift_vega;
                      ext::static_pointer_cast<SimpleQuote>(atmVolQuote.currentLink())
                          ->setValue(atmVolQuote->value() - sigmaShift_vega); // setback
@@ -274,13 +273,11 @@ namespace QuantLib {
                      // base NPV
                      ext::static_pointer_cast<SimpleQuote>(atmVolQuote.currentLink())
                          ->setValue(atmVolQuote->value() + sigmaShift_volga);
-                     doubleBarrierOption.recalculate();
                      Real priceBS2 = doubleBarrierOption.NPV();
 
                      // shifted npv
                      ext::static_pointer_cast<SimpleQuote>(atmVolQuote.currentLink())
                          ->setValue(atmVolQuote->value() + sigmaShift_vega);
-                     doubleBarrierOption.recalculate();
                      Real vegaBarBS2 = (doubleBarrierOption.NPV() - priceBS2) / sigmaShift_vega;
                      Real volgaBarBS = (vegaBarBS2 - vegaBarBS) / sigmaShift_volga;
                      ext::static_pointer_cast<SimpleQuote>(atmVolQuote.currentLink())
@@ -291,12 +288,10 @@ namespace QuantLib {
                      // base delta
                      ext::static_pointer_cast<SimpleQuote>(x0Quote.currentLink())
                          ->setValue(x0Quote->value() + spotShift_delta); // shift forth
-                     doubleBarrierOption.recalculate();
                      Real priceBS_delta1 = doubleBarrierOption.NPV();
 
                      ext::static_pointer_cast<SimpleQuote>(x0Quote.currentLink())
                          ->setValue(x0Quote->value() - 2 * spotShift_delta); // shift back
-                     doubleBarrierOption.recalculate();
                      Real priceBS_delta2 = doubleBarrierOption.NPV();
 
                      ext::static_pointer_cast<SimpleQuote>(x0Quote.currentLink())
@@ -309,12 +304,10 @@ namespace QuantLib {
                      // shifted delta
                      ext::static_pointer_cast<SimpleQuote>(x0Quote.currentLink())
                          ->setValue(x0Quote->value() + spotShift_delta); // shift forth
-                     doubleBarrierOption.recalculate();
                      priceBS_delta1 = doubleBarrierOption.NPV();
 
                      ext::static_pointer_cast<SimpleQuote>(x0Quote.currentLink())
                          ->setValue(x0Quote->value() - 2 * spotShift_delta); // shift back
-                     doubleBarrierOption.recalculate();
                      priceBS_delta2 = doubleBarrierOption.NPV();
 
                      ext::static_pointer_cast<SimpleQuote>(x0Quote.currentLink())

@@ -64,7 +64,6 @@ namespace QuantLib {
 
         Leg::const_iterator i;
         for (i = yoyLeg.begin(); i < yoyLeg.end(); ++i)
-            registerWith(*i);
 
         legs_[0] = fixedLeg;
         legs_[1] = yoyLeg;

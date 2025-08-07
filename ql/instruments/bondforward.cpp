@@ -41,8 +41,6 @@ namespace QuantLib {
               valueDate, maturityDate, discountCurve), bond_(bond) {
 
         incomeDiscountCurve_ = incomeDiscountCurve;
-        registerWith(incomeDiscountCurve_);
-        registerWith(bond);
     }
 
 

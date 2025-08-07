@@ -361,7 +361,6 @@ BOOST_AUTO_TEST_CASE(testNotifications) {
     swap->NPV();
 
     Flag flag;
-    flag.registerWith(swap);
     flag.lower();
 
     forecast_handle.linkTo(flatRate(0.03, Actual365Fixed()));

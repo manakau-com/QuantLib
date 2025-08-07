@@ -109,7 +109,7 @@ namespace QuantLib {
         // other
         void setupArguments(PricingEngine::arguments* args) const override;
         void fetchResults(const PricingEngine::results*) const override;
-        ~YearOnYearInflationSwap() override = default;
+        ~YearOnYearInflationSwap() = default;
 
       private:
         void setupExpired() const override;

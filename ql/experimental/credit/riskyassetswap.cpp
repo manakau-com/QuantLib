@@ -39,9 +39,6 @@ namespace QuantLib {
       floatSchedule_(std::move(floatSchedule)), fixedDayCounter_(std::move(fixedDayCounter)),
       floatDayCounter_(std::move(floatDayCounter)), spread_(spread), recoveryRate_(recoveryRate),
       yieldTS_(std::move(yieldTS)), defaultTS_(std::move(defaultTS)), coupon_(coupon) {
-
-        registerWith (yieldTS_);
-        registerWith (defaultTS_);
     }
 
     bool RiskyAssetSwap::isExpired () const {
@@ -206,8 +203,6 @@ namespace QuantLib {
     Real AssetSwapHelper::impliedQuote() const {
         QL_REQUIRE(!probability_.empty(),
                    "default term structure not set");
-        // we didn't register as observers - force calculation
-        asw_->recalculate();
         return asw_->fairSpread();
     }
 

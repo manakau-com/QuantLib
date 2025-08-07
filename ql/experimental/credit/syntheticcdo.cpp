@@ -57,31 +57,6 @@ namespace QuantLib {
             .withNotionals(basket_->trancheNotional() * leverageFactor_)
             .withCouponRates(runningRate, dayCounter)
             .withPaymentAdjustment(paymentConvention);
-
-        // Date today = Settings::instance().evaluationDate();
-
-        // register with probabilities if the corresponding issuer is, baskets
-        //   are not registered with the DTS
-        for (Size i = 0; i < basket->names().size(); i++) {
-            /* This turns out to be a problem: depends on today but I am not
-            modifying the registrations, if we go back in time in the
-            calculations this would left me unregistered to some. Not impossible
-            to de-register and register when updating but i am dropping it.
-
-            if(!basket->pool()->get(basket->names()[i]).
-                defaultedBetween(schedule.dates()[0], today,
-                                     basket->pool()->defaultKeys()[i]))
-            */
-            // registers with the associated curve (issuer and event type)
-            // \todo make it possible to access them by name instead of index
-            registerWith(basket->pool()->get(basket->names()[i]).
-                defaultProbability(basket->pool()->defaultKeys()[i]));
-            /* \todo Issuers should be observables/obsrvr and they would in turn
-            regiter with the DTS; only we might get updates from curves we do
-            not use.
-            */
-        }
-        registerWith(basket_);
     }
 
     Rate SyntheticCDO::premiumValue () const {

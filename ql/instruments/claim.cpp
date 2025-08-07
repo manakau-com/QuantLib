@@ -32,7 +32,6 @@ namespace QuantLib {
     FaceValueAccrualClaim::FaceValueAccrualClaim(
                           const ext::shared_ptr<Bond>& referenceSecurity)
     : referenceSecurity_(referenceSecurity) {
-        registerWith(referenceSecurity);
     }
 
     Real FaceValueAccrualClaim::amount(const Date& d,

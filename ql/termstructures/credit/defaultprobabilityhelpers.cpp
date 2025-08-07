@@ -54,7 +54,6 @@ namespace QuantLib {
 
         CdsHelper::initializeDates();
 
-        registerWith(discountCurve);
     }
 
     void CdsHelper::setTermStructure(DefaultProbabilityTermStructure* ts) {
@@ -130,7 +129,6 @@ namespace QuantLib {
                 startDate, lastPeriodDayCounter, rebatesAccrual, model) {}
 
     Real SpreadCdsHelper::impliedQuote() const {
-        swap_->recalculate();
         return swap_->fairSpread();
     }
 
@@ -219,7 +217,6 @@ namespace QuantLib {
     Real UpfrontCdsHelper::impliedQuote() const {
         SavedSettings backup;
         Settings::instance().includeTodaysCashFlows() = true;
-        swap_->recalculate();
         return swap_->fairUpfront();
     }
 

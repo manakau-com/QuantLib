@@ -27,9 +27,6 @@ namespace QuantLib {
                                        Handle<Quote> spread,
                                        const Period& fwdStart)
     : swapIndex_(std::move(swapIndex)), spread_(std::move(spread)), fwdStart_(fwdStart) {
-        registerWith(swapIndex_);
-        registerWith(spread_);
-        registerWith(Settings::instance().evaluationDate());
         evaluationDate_ = Settings::instance().evaluationDate();
         initializeDates();
     }
@@ -51,7 +48,6 @@ namespace QuantLib {
             evaluationDate_ = Settings::instance().evaluationDate();
             initializeDates();
         }
-        LazyObject::update();
     }
 
     const Date& ForwardSwapQuote::valueDate() const {
@@ -75,19 +71,11 @@ namespace QuantLib {
     }
 
     bool ForwardSwapQuote::isValid() const {
-        bool swapIndexIsValid = true;
-        try {
-            swap_->recalculate();
-        } catch (...) {
-            swapIndexIsValid = false;
-        }
         bool spreadIsValid = spread_.empty() ? true : spread_->isValid();
-        return swapIndexIsValid && spreadIsValid;
+        return spreadIsValid;
     }
 
     void ForwardSwapQuote::performCalculations() const {
-        // we didn't register as observers - force calculation
-        swap_->recalculate();
         // weak implementation... to be improved
         static const Spread basisPoint = 1.0e-4;
         Real floatingLegNPV = swap_->floatingLegNPV();

@@ -52,8 +52,6 @@ namespace QuantLib {
 
     Real BondHelper::impliedQuote() const {
         QL_REQUIRE(termStructure_ != nullptr, "term structure not set");
-        // we didn't register as observers - force calculation
-        bond_->recalculate();
 
         switch (priceType_) {
             case Bond::Price::Clean:

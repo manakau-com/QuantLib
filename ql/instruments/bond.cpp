@@ -54,10 +54,6 @@ namespace QuantLib {
 
             addRedemptionsToCashflows();
         }
-
-        registerWith(Settings::instance().evaluationDate());
-        for (const auto& cashflow : cashflows_)
-            registerWith(cashflow);
     }
 
     Bond::Bond(Natural settlementDays,
@@ -95,10 +91,6 @@ namespace QuantLib {
 
             redemptions_.push_back(cashflows.back());
         }
-
-        registerWith(Settings::instance().evaluationDate());
-        for (const auto& cashflow : cashflows_)
-            registerWith(cashflow);
     }
 
     bool Bond::isExpired() const {
@@ -353,12 +345,6 @@ namespace QuantLib {
         redemptions_.push_back(redemption);
     }
 
-    void Bond::deepUpdate() {
-        for (auto& cashflow : cashflows_) {
-            cashflow->deepUpdate();
-        }
-        update();
-    }
 
     void Bond::calculateNotionalsFromCashflows() {
         notionalSchedule_.clear();

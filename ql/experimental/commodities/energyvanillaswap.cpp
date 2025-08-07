@@ -45,7 +45,6 @@ namespace QuantLib {
       discountTermStructure_(std::move(discountTermStructure)) {
 
         QL_REQUIRE(!pricingPeriods_.empty(), "no pricing periods");
-        registerWith(index_);
     }
 
     bool EnergyVanillaSwap::isExpired() const {

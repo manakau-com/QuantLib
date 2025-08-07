@@ -139,11 +139,6 @@ namespace QuantLib {
             while (floorRates_.size() < floatingLeg_.size())
                 floorRates_.push_back(floorRates_.back());
         }
-        Leg::const_iterator i;
-        for (i = floatingLeg_.begin(); i != floatingLeg_.end(); ++i)
-            registerWith(*i);
-
-        registerWith(Settings::instance().evaluationDate());
     }
 
     CapFloor::CapFloor(CapFloor::Type type, Leg floatingLeg, const std::vector<Rate>& strikes)
@@ -161,12 +156,6 @@ namespace QuantLib {
                 floorRates_.push_back(floorRates_.back());
         } else
             QL_FAIL("only Cap/Floor types allowed in this constructor");
-
-        Leg::const_iterator i;
-        for (i = floatingLeg_.begin(); i != floatingLeg_.end(); ++i)
-            registerWith(*i);
-
-        registerWith(Settings::instance().evaluationDate());
     }
 
     bool CapFloor::isExpired() const {
@@ -268,12 +257,6 @@ namespace QuantLib {
         }
     }
 
-    void CapFloor::deepUpdate() {
-        for (auto& i : floatingLeg_) {
-            i->deepUpdate();
-        }
-        update();
-    }
 
     void CapFloor::arguments::validate() const {
         QL_REQUIRE(endDates.size() == startDates.size(),

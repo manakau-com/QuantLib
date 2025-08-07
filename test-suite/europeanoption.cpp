@@ -1099,7 +1099,6 @@ BOOST_AUTO_TEST_CASE(testImpliedVolContainment) {
     Real refValue = option2->NPV();
 
     Flag f;
-    f.registerWith(option2);
 
     option1->impliedVolatility(refValue*1.5, process,
                                tolerance, maxEvaluations);
@@ -1108,7 +1107,6 @@ BOOST_AUTO_TEST_CASE(testImpliedVolContainment) {
         BOOST_ERROR("implied volatility calculation triggered a change "
                     "in another instrument");
 
-    option2->recalculate();
     if (std::fabs(option2->NPV() - refValue) >= 1.0e-8)
         BOOST_ERROR("implied volatility calculation changed the value "
                     << "of another instrument: \n"

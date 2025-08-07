@@ -42,7 +42,6 @@ BOOST_AUTO_TEST_CASE(testObservable) {
     ext::shared_ptr<Instrument> s(new Stock(h));
 
     Flag f;
-    f.registerWith(s);
 
     s->NPV();
     me1->setValue(3.14);
@@ -57,13 +56,11 @@ BOOST_AUTO_TEST_CASE(testObservable) {
         BOOST_FAIL("Observer was not notified of instrument change");
 
     f.lower();
-    s->freeze();
     s->NPV();
     me2->setValue(2.71);
     if (f.isUp())
         BOOST_FAIL("Observer was notified of frozen instrument change");
     s->NPV();
-    s->unfreeze();
     if (!f.isUp())
         BOOST_FAIL("Observer was not notified of instrument change");
 }

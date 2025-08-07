@@ -39,9 +39,6 @@ namespace QuantLib {
 
         maturityDate_ = calendar_.adjust(maturityDate_,
                                          businessDayConvention_);
-
-        registerWith(Settings::instance().evaluationDate());
-        registerWith(discountCurve_);
     }
 
 

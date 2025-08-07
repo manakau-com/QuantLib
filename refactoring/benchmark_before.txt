@@ -1,0 +1,536 @@
+
+------------------------------------------------------------------------------------
+Benchmark Suite QuantLib 1.39-rc
+
+Benchmark size='1' on 1 processes
+------------------------------------------------------------------------------------
+
+Running 1 test case...
+
+Tests completed in 9 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 6 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 6 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 3 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 5 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 3 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 3 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 3 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49m[0m
+Benchmark Size        = Custom (1)
+Number of processes   = 1
+System Throughput     = 0.762178 tasks/s
+Benchmark Runtime     = 114.146s
+------------------------------------------------------------------------------------
+

@@ -96,7 +96,6 @@ namespace QuantLib {
                  Settlement::Method settlementMethod = Settlement::PhysicalOTC);
         //! \name Observer interface
         //@{
-        void deepUpdate() override;
         //@}
         //! \name Instrument interface
         //@{

@@ -25,21 +25,10 @@ namespace QuantLib {
 
     Instrument::Instrument()
     : NPV_(Null<Real>()), errorEstimate_(Null<Real>()) {
-        // this makes sense in general (if the evaluation date
-        // changes, you probably want to recalculate) and can also
-        // help avoid some edge cases when lazy objects only forward
-        // their first notification.
-        registerWith(Settings::instance().evaluationDate());
     }
 
     void Instrument::setPricingEngine(const ext::shared_ptr<PricingEngine>& e) {
-        if (engine_ != nullptr)
-            unregisterWith(engine_);
         engine_ = e;
-        if (engine_ != nullptr)
-            registerWith(engine_);
-        // trigger (lazy) recalculation and notify observers
-        update();
     }
 
     void Instrument::setupArguments(PricingEngine::arguments*) const {

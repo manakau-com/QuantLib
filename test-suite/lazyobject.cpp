@@ -21,6 +21,7 @@
 #include "utilities.hpp"
 #include <ql/instruments/stock.hpp>
 #include <ql/quotes/simplequote.hpp>
+#include <ql/patterns/lazyobject.hpp>
 
 using namespace QuantLib;
 using namespace boost::unit_test_framework;
@@ -55,10 +56,6 @@ BOOST_AUTO_TEST_CASE(testDiscardingNotifications) {
     ext::shared_ptr<Instrument> s(new Stock(Handle<Quote>(q)));
 
     Flag f;
-    f.registerWith(s);
-
-    s->forwardFirstNotificationOnly();
-
     s->NPV();
     q->setValue(1.0);
     if (!f.isUp())
@@ -88,8 +85,6 @@ BOOST_AUTO_TEST_CASE(testDiscardingNotificationsByDefault) {
     ext::shared_ptr<Instrument> s(new Stock(Handle<Quote>(q)));
 
     Flag f;
-    f.registerWith(s);
-
     s->NPV();
     q->setValue(1.0);
     if (!f.isUp())
@@ -119,8 +114,6 @@ BOOST_AUTO_TEST_CASE(testForwardingNotificationsByDefault) {
     ext::shared_ptr<Instrument> s(new Stock(Handle<Quote>(q)));
 
     Flag f;
-    f.registerWith(s);
-
     s->NPV();
     q->setValue(1.0);
     if (!f.isUp())
@@ -144,10 +137,6 @@ BOOST_AUTO_TEST_CASE(testForwardingNotifications) {
     ext::shared_ptr<Instrument> s(new Stock(Handle<Quote>(q)));
 
     Flag f;
-    f.registerWith(s);
-
-    s->alwaysForwardNotifications();
-
     s->NPV();
     q->setValue(1.0);
     if (!f.isUp())
@@ -172,10 +161,6 @@ BOOST_AUTO_TEST_CASE(testNotificationLoop) {
     auto s2 = ext::make_shared<Stock>(Handle<Quote>());
     auto s3 = ext::make_shared<Stock>(Handle<Quote>());
 
-    s3->registerWith(s2);
-    s2->registerWith(s1);
-    s1->registerWith(s3);
-
 #ifdef QL_THROW_IN_CYCLES
 
     BOOST_CHECK_EXCEPTION(q->setValue(2.0), Error,
@@ -184,19 +169,12 @@ BOOST_AUTO_TEST_CASE(testNotificationLoop) {
 #else
 
     Flag f;
-    f.registerWith(s3);
     q->setValue(2.0);
 
     if (!f.isUp())
         BOOST_FAIL("Observer was not notified of change");
 
 #endif
-
-    // We have produced a ring of dependencies which we break here
-    // see https://github.com/lballabio/QuantLib/issues/1725
-    s1->unregisterWithAll();
-    s2->unregisterWithAll();
-    s3->unregisterWithAll();
 }
 
 BOOST_AUTO_TEST_SUITE_END()

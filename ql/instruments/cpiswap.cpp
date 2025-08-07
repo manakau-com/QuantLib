@@ -107,16 +107,6 @@ namespace QuantLib {
         .withObservationInterpolation(observationInterpolation_)
         .withSubtractInflationNominal(subtractInflationNominal_);
 
-
-        Leg::const_iterator i;
-        for (i = cpiLeg.begin(); i < cpiLeg.end(); ++i) {
-            registerWith(*i);
-        }
-
-        for (i = floatingLeg.begin(); i < floatingLeg.end(); ++i) {
-            registerWith(*i);
-        }
-
         legs_[0] = cpiLeg;
         legs_[1] = floatingLeg;
 

@@ -54,7 +54,6 @@ namespace QuantLib {
                       Real multiplier = 1.0);
         //! \name Observer interface
         //@{
-        void deepUpdate() override;
         //@}
         //! \name Instrument interface
         //@{

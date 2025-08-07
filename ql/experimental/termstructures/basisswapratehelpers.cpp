@@ -104,7 +104,6 @@ namespace QuantLib {
     }
 
     Real IborIborBasisSwapRateHelper::impliedQuote() const {
-        swap_->deepUpdate();
         return - (swap_->NPV() / swap_->legBPS(0)) * 1.0e-4;
     }
 
@@ -183,7 +182,6 @@ namespace QuantLib {
     }
 
     Real OvernightIborBasisSwapRateHelper::impliedQuote() const {
-        swap_->deepUpdate();
         return - (swap_->NPV() / swap_->legBPS(0)) * 1.0e-4;
     }
 

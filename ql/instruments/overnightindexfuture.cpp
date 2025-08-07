@@ -34,9 +34,6 @@ namespace QuantLib {
       maturityDate_(maturityDate), convexityAdjustment_(std::move(convexityAdjustment)),
       averagingMethod_(averagingMethod) {
         QL_REQUIRE(overnightIndex_, "null overnight index");
-        registerWith(overnightIndex_);
-        registerWith(convexityAdjustment_);
-        registerWith(Settings::instance().evaluationDate());
     }
 
     Real OvernightIndexFuture::averagedRate() const {

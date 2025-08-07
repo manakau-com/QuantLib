@@ -147,7 +147,6 @@ namespace QuantLib {
 
         QL_ENSURE(redemptions_.size() == 1, "multiple redemptions created");
 
-        registerWith(index);
     }
 
     void ConvertibleBond::setupArguments(PricingEngine::arguments* arguments) const {

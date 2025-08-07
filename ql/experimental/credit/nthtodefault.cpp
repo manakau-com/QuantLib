@@ -57,8 +57,6 @@ namespace QuantLib {
             .withNotionals(nominal)
             .withCouponRates(premiumRate, dayCounter)
             .withPaymentAdjustment(Unadjusted);
-
-        registerWith(basket_);
     }
 
 

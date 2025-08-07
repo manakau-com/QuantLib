@@ -59,11 +59,6 @@ namespace QuantLib {
             while (floorRates_.size() < yoyLeg_.size())
                 floorRates_.push_back(floorRates_.back());
         }
-        Leg::const_iterator i;
-        for (i = yoyLeg_.begin(); i != yoyLeg_.end(); ++i)
-            registerWith(*i);
-
-        registerWith(Settings::instance().evaluationDate());
     }
 
     YoYInflationCapFloor::YoYInflationCapFloor(YoYInflationCapFloor::Type type,
@@ -83,12 +78,6 @@ namespace QuantLib {
                 floorRates_.push_back(floorRates_.back());
         } else
             QL_FAIL("only Cap/Floor types allowed in this constructor");
-
-        Leg::const_iterator i;
-        for (i = yoyLeg_.begin(); i != yoyLeg_.end(); ++i)
-            registerWith(*i);
-
-        registerWith(Settings::instance().evaluationDate());
     }
 
     bool YoYInflationCapFloor::isExpired() const {

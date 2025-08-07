@@ -48,8 +48,6 @@ namespace QuantLib {
             .withPaymentAdjustment(this->paymentConvention())
             .withSpreads(this->spread())
             .withIndexedCoupons(useIndexedCoupons);
-        for (const auto& c : legs_[1])
-            registerWith(c);
     }
 
     void VanillaSwap::setupFloatingArguments(arguments* args) const {

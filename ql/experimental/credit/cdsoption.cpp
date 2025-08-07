@@ -74,7 +74,6 @@ namespace QuantLib {
         QL_REQUIRE(swap->side() == Protection::Buyer || knocksOut_,
                    "receiver CDS options must knock out");
         QL_REQUIRE(!swap->upfront(), "underlying must be running-spread only");
-        registerWith(swap_);
     }
 
     bool CdsOption::isExpired () const {

@@ -101,7 +101,6 @@ namespace QuantLib {
                                          IrregularSettlement::Type delivery)
     : Option(ext::shared_ptr<Payoff>(), exercise), swap_(std::move(swap)),
       settlementType_(delivery) {
-        registerWith(swap_);
     }
 
     bool IrregularSwaption::isExpired() const {

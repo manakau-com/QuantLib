@@ -188,10 +188,6 @@ namespace QuantLib {
 
         /******** registration and sides ********/
 
-        for (const auto& leg: legs_)
-            for (const auto& c: leg)
-                registerWith(c);
-
         if (payBondCoupon) {
             payer_[0]=-1.0;
             payer_[1]=+1.0;

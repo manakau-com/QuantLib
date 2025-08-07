@@ -28,6 +28,7 @@
 #include <ql/quote.hpp>
 #include <ql/handle.hpp>
 #include <ql/option.hpp>
+#include <ql/patterns/lazyobject.hpp>
 
 namespace QuantLib {
 

@@ -67,7 +67,6 @@ namespace QuantLib {
         QL_ENSURE(!cashflows().empty(), "bond with no cashflows!");
         QL_ENSURE(redemptions_.size() == 1, "multiple redemptions created");
 
-        registerWith(iborIndex);
     }
 
 }

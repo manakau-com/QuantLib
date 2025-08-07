@@ -969,7 +969,6 @@ BOOST_AUTO_TEST_CASE(testNotifications) {
     ois->NPV();
 
     Flag flag;
-    flag.registerWith(ois);
     flag.lower();
 
     forecast_handle.linkTo(flatRate(0.03, Actual360()));

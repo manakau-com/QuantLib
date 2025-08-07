@@ -30,17 +30,6 @@ namespace QuantLib {
               *fromSwaption.underlying())),
           settlementType_(fromSwaption.settlementType()),
           settlementMethod_(fromSwaption.settlementMethod()) {
-
-        registerWith(swap_);
-        // When we ask for the NPV of an expired swaption, the
-        // swap is not recalculated and thus wouldn't forward
-        // later notifications according to the default behavior of
-        // LazyObject instances.  This means that even if the
-        // evaluation date changes so that the swaption is no longer
-        // expired, the instrument wouldn't be notified and thus it
-        // wouldn't recalculate.  To avoid this, we override the
-        // default behavior of the underlying swap.
-        swap_->alwaysForwardNotifications();
     }
 
     NonstandardSwaption::NonstandardSwaption(ext::shared_ptr<NonstandardSwap> swap,
@@ -49,8 +38,6 @@ namespace QuantLib {
                                              Settlement::Method settlementMethod)
     : Option(ext::shared_ptr<Payoff>(), exercise), swap_(std::move(swap)),
       settlementType_(delivery), settlementMethod_(settlementMethod) {
-        registerWith(swap_);
-        swap_->alwaysForwardNotifications();
     }
 
     bool NonstandardSwaption::isExpired() const {

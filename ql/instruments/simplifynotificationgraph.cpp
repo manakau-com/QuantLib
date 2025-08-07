@@ -24,8 +24,6 @@ namespace QuantLib {
 
     void simplifyNotificationGraph(Instrument& instrument, const Leg& leg, bool unregisterCoupons) {
         for (auto const& coupon : leg) {
-            instrument.unregisterWith(coupon);
-            instrument.registerWithObservables(coupon);
             if (unregisterCoupons) {
                 coupon->unregisterWithAll();
             }

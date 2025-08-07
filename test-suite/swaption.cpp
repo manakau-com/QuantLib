@@ -159,11 +159,7 @@ BOOST_AUTO_TEST_CASE(testBlackEngineCaching) {
                                             .withType(Swap::Payer);
     ext::shared_ptr<Swaption> swaption = vars.makeSwaption(swap, exerciseDate, 0.12);
 
-    BOOST_CHECK(!swaption->isCalculated());
-
     swaption->NPV();
-
-    BOOST_CHECK(swaption->isCalculated());
 }
 
 BOOST_AUTO_TEST_CASE(testStrikeDependency) {

@@ -172,7 +172,6 @@ namespace QuantLib {
 
         if (!claim_)
             claim_ = ext::make_shared<FaceValueClaim>();
-        registerWith(claim_);
     }
 
     Protection::Side CreditDefaultSwap::side() const {

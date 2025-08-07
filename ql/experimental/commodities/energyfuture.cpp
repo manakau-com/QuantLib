@@ -32,8 +32,6 @@ namespace QuantLib {
                                const ext::shared_ptr<SecondaryCosts>& secondaryCosts)
     : EnergyCommodity(commodityType, secondaryCosts), buySell_(buySell),
       quantity_(std::move(quantity)), tradePrice_(std::move(tradePrice)), index_(std::move(index)) {
-        registerWith(Settings::instance().evaluationDate());
-        registerWith(index_);
     }
 
     bool EnergyFuture::isExpired() const {

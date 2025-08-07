@@ -51,11 +51,6 @@ namespace QuantLib {
                     && detachment_ <= 1,
                     "illegal attachment/detachment point");
 
-        registerWith (yieldTS_);
-        registerWith (copula_);
-        for (auto& i : basket_)
-            registerWith(i);
-
         QL_REQUIRE (nominals_.size() <= basket_.size(),
                     "nominal vector size too large");
 

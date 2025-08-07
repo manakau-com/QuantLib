@@ -106,7 +106,6 @@ namespace QuantLib {
         //@}
         //! \name Observer interface
         //@{
-        void update() override { notifyObservers(); }
         //@}
       private:
         std::vector<ext::shared_ptr<BTP> > btps_;

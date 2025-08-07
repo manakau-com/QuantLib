@@ -57,11 +57,6 @@ namespace QuantLib {
             .withPaymentDayCounter(bmaDayCount)
             .withPaymentAdjustment(bmaConvention);
 
-        for (Size j=0; j<2; ++j) {
-            for (auto& i : legs_[j])
-                registerWith(i);
-        }
-
         switch (type_) {
           case Payer:
             payer_[0] = +1.0;

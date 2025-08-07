@@ -58,8 +58,6 @@ namespace QuantLib {
         addRedemptionsToCashflows(redemptions);
 
         QL_ENSURE(!cashflows().empty(), "bond with no cashflows!");
-
-        registerWith(index);
     }
 
 }

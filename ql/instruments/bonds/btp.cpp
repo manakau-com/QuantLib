@@ -126,7 +126,6 @@ namespace QuantLib {
         weights_.resize(n_);
         for (Size i=0; i<n_; ++i) {
             weights_[i] = outstandings[i]/outstanding_;
-            registerWith(quotes_[i]);
         }
     }
 
@@ -140,9 +139,6 @@ namespace QuantLib {
       // TODO: generalize number of swaps and their lengths
       swaps_(nSwaps_), swapLengths_(nSwaps_), swapBondDurations_(nSwaps_, Null<Time>()),
       swapBondYields_(nSwaps_, 0.05), swapRates_(nSwaps_, Null<Rate>()) {
-        registerWith(basket_);
-        registerWith(euriborIndex_);
-        registerWith(discountCurve_);
 
         Rate dummyRate = 0.05;
         for (Size i=0; i<nSwaps_; ++i) {

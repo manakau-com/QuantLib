@@ -45,9 +45,6 @@ namespace QuantLib {
       receiveLegTermStructure_(std::move(receiveLegTermStructure)),
       discountTermStructure_(std::move(discountTermStructure)) {
         QL_REQUIRE(!pricingPeriods_.empty(), "no payment dates");
-        registerWith(spreadIndex_);
-        registerWith(payIndex_);
-        registerWith(receiveIndex_);
     }
 
     void EnergyBasisSwap::performCalculations() const {

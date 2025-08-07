@@ -90,10 +90,6 @@ namespace QuantLib {
             c->setPricer(arithmeticPricer);
         }
 
-        for (Size j=0; j<2; ++j) {
-            for (auto& i : legs_[j])
-                registerWith(i);
-        }
 
         switch (type_) {
           case Payer:

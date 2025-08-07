@@ -87,8 +87,6 @@ namespace QuantLib {
 
     Real ArithmeticOISRateHelper::impliedQuote() const {
         QL_REQUIRE(termStructure_ != nullptr, "term structure not set");
-        // we didn't register as observers - force calculation
-        swap_->recalculate();
         //return swap_->fairRate();
         // weak implementation... to be improved
         static const Spread basisPoint = 1.0e-4;

@@ -69,7 +69,6 @@ namespace QuantLib {
 
         QL_ENSURE(!cashflows().empty(), "bond with no cashflows!");
 
-        registerWith(index);
     }
 
 }

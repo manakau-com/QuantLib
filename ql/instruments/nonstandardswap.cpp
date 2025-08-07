@@ -210,9 +210,6 @@ namespace QuantLib {
             floatingNominal_.push_back(floatingNominal_.back());
         }
 
-        for (auto i = legs_[1].begin(); i < legs_[1].end(); ++i)
-            registerWith(*i);
-
         switch (type_) {
         case Swap::Payer:
             payer_[0] = -1.0;

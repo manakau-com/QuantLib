@@ -1,0 +1,401 @@
+
+------------------------------------------------------------------------------------
+Benchmark Suite QuantLib 1.39-rc
+
+Benchmark size='1' on 1 processes
+------------------------------------------------------------------------------------
+
+Running 1 test case...
+
+Tests completed in 8 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 5 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 5 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/MarkovFunctionalTests/testVanillaEngines": QuantLib::Error: 1st iteration: failed at 16th alive instrument, pillar November 18th, 2013, maturity November 18th, 2013, reference date November 14th, 2012: root not bracketed: f[0.911167,1.09176] -> [-9.224351e-02,-9.196639e-02][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 2 s
+
+
+[1;31;49m*** The test case "QuantLibTests/MarkovFunctionalTests/testVanillaEngines" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/MarkovFunctionalTests/testVanillaEngines"
+[0;39;49mRunning 1 test case...
+
+Tests completed in 3 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 3 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/OvernightIndexedSwapTests/testBootstrapWithArithmeticAverage": QuantLib::Error: 1st iteration: failed at 3rd alive instrument, pillar February 18th, 2009, maturity February 16th, 2009, reference date February 5th, 2009: root not bracketed: f[0.975525,1.02484] -> [-9.763660e-01,-9.763660e-01][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** The test case "QuantLibTests/OvernightIndexedSwapTests/testBootstrapWithArithmeticAverage" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/OvernightIndexedSwapTests/testBootstrapWithArithmeticAverage"
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/MarkovFunctionalTests/testCalibrationOneInstrumentSet": QuantLib::Error: 1st iteration: failed at 16th alive instrument, pillar November 18th, 2013, maturity November 18th, 2013, reference date November 14th, 2012: root not bracketed: f[0.911167,1.09176] -> [-9.224351e-02,-9.196639e-02][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 1 s
+
+
+[1;31;49m*** The test case "QuantLibTests/MarkovFunctionalTests/testCalibrationOneInstrumentSet" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/MarkovFunctionalTests/testCalibrationOneInstrumentSet"
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/OvernightIndexedSwapTests/testBaseBootstrap": QuantLib::Error: 1st iteration: failed at 3rd alive instrument, pillar February 18th, 2009, maturity February 16th, 2009, reference date February 5th, 2009: root not bracketed: f[0.975525,1.02484] -> [-9.833698e-01,-9.833698e-01][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** The test case "QuantLibTests/OvernightIndexedSwapTests/testBaseBootstrap" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/OvernightIndexedSwapTests/testBaseBootstrap"
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/MarkovFunctionalTests/testCalibrationTwoInstrumentSets": QuantLib::Error: 1st iteration: failed at 16th alive instrument, pillar November 18th, 2013, maturity November 18th, 2013, reference date November 14th, 2012: root not bracketed: f[0.911167,1.09176] -> [-9.224351e-02,-9.196639e-02][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 1 s
+
+
+[1;31;49m*** The test case "QuantLibTests/MarkovFunctionalTests/testCalibrationTwoInstrumentSets" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/MarkovFunctionalTests/testCalibrationTwoInstrumentSets"
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/PiecewiseYieldCurveTests/testFlatForwardConsistency": QuantLib::Error: 1st iteration: failed at 7th alive instrument, pillar July 23rd, 2026, maturity July 23rd, 2026, reference date July 23rd, 2025: root not bracketed: f[-1,1] -> [2.422187e-01,2.303487e-01][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** The test case "QuantLibTests/PiecewiseYieldCurveTests/testFlatForwardConsistency" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/PiecewiseYieldCurveTests/testFlatForwardConsistency"
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 4 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 2 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/PiecewiseYieldCurveTests/testGlobalBootstrapVariables": QuantLib::Error: invalid value (0) at index 20[0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** The test case "QuantLibTests/PiecewiseYieldCurveTests/testGlobalBootstrapVariables" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/PiecewiseYieldCurveTests/testGlobalBootstrapVariables"
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/PiecewiseYieldCurveTests/testConvexMonotoneForwardConsistency": QuantLib::Error: 1st iteration: failed at 7th alive instrument, pillar July 23rd, 2026, maturity July 23rd, 2026, reference date July 23rd, 2025: root not bracketed: f[-1,1] -> [2.422187e-01,2.303487e-01][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** The test case "QuantLibTests/PiecewiseYieldCurveTests/testConvexMonotoneForwardConsistency" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/PiecewiseYieldCurveTests/testConvexMonotoneForwardConsistency"
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 4 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/CreditDefaultSwapTests/testIsdaEngine": QuantLib::Error: 1st iteration: failed at 7th alive instrument, pillar May 25th, 2011, maturity May 25th, 2011, reference date May 21st, 2009: root not bracketed: f[0.36218,2.67616] -> [-4.226957e-01,-6.837947e-01][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** The test case "QuantLibTests/CreditDefaultSwapTests/testIsdaEngine" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/CreditDefaultSwapTests/testIsdaEngine"
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+unknown location(0): [4;31;49mfatal error: in "QuantLibTests/MarkovFunctionalTests/testBermudanSwaption": QuantLib::Error: 1st iteration: failed at 16th alive instrument, pillar November 18th, 2013, maturity November 18th, 2013, reference date November 14th, 2012: root not bracketed: f[0.911167,1.09176] -> [-9.224351e-02,-9.196639e-02][0;39;49m
+toplevelfixture.hpp(42): [1;36;49mlast checkpoint[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** The test case "QuantLibTests/MarkovFunctionalTests/testBermudanSwaption" was aborted; see standard output for details
+*** 1 failure is detected in the test case "QuantLibTests/MarkovFunctionalTests/testBermudanSwaption"
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 0 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+
+Tests completed in 1 s
+
+
+[1;32;49m*** No errors detected
+[0;39;49mRunning 1 test case...
+overnightindexedswap.cpp(718): [1;31;49merror: in "QuantLibTests/OvernightIndexedSwapTests/testBootstrapRegression": unexpected exception thrown by curve.discount(1.0)[0;39;49m
+
+Tests completed in 0 s
+
+
+[1;31;49m*** 1 failure is detected in the test case "QuantLibTests/OvernightIndexedSwapTests/testBootstrapRegression"
+[0;39;49m[0m
+Error: INVALID BENCHMARK RUN.
+One or more tests failed, please see the log for details

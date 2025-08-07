@@ -162,8 +162,6 @@ namespace QuantLib {
                 .withLookbackDays(lookbackDays_)
                 .withLockoutDays(lockoutDays_)
                 .withObservationShift(applyObservationShift_);
-        for (const auto& c : legs_[1])
-            registerWith(c);
     }
 
     void OvernightIndexedSwap::setupFloatingArguments(arguments* args) const {

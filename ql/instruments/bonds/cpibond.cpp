@@ -78,11 +78,5 @@ namespace QuantLib {
         calculateNotionalsFromCashflows();
 
         redemptions_.push_back(cashflows_.back());
-
-        registerWith(cpiIndex_);
-        Leg::const_iterator i;
-        for (i = cashflows_.begin(); i < cashflows_.end(); ++i) {
-            registerWith(*i);
-        }
     }
 }

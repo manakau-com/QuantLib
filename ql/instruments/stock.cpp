@@ -22,7 +22,8 @@
 
 namespace QuantLib {
 
-    Stock::Stock(Handle<Quote> quote) : quote_(std::move(quote)) { registerWith(quote_); }
+    Stock::Stock(Handle<Quote> quote) : quote_(std::move(quote))
+    {}
 
     void Stock::performCalculations() const {
         QL_REQUIRE(!quote_.empty(), "null quote set");

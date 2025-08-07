@@ -25,7 +25,6 @@
 #ifndef quantlib_instrument_hpp
 #define quantlib_instrument_hpp
 
-#include <ql/patterns/lazyobject.hpp>
 #include <ql/pricingengine.hpp>
 #include <ql/utilities/null.hpp>
 #include <ql/time/date.hpp>
@@ -41,7 +40,7 @@ namespace QuantLib {
 
         \test observability of class instances is checked.
     */
-    class Instrument : public LazyObject {
+    class Instrument {
       public:
         class results;
         Instrument();
@@ -85,7 +84,7 @@ namespace QuantLib {
       protected:
         //! \name Calculations
         //@{
-        void calculate() const override;
+        void calculate() const;
         /*! This method must leave the instrument in a consistent
             state when the expiration condition is met.
         */
@@ -96,7 +95,7 @@ namespace QuantLib {
             a pricing engine is used, the default implementation
             can be used.
         */
-        void performCalculations() const override;
+        virtual void performCalculations() const;
         //@}
         /*! \name Results
             The value of this attribute and any other that derived
@@ -127,13 +126,10 @@ namespace QuantLib {
     // inline definitions
 
     inline void Instrument::calculate() const {
-        if (!calculated_) {
-            if (isExpired()) {
-                setupExpired();
-                calculated_ = true;
-            } else {
-                LazyObject::calculate();
-            }
+        if (isExpired()) {
+            setupExpired();
+        } else {
+            performCalculations();
         }
     }
 

@@ -107,7 +107,6 @@ namespace QuantLib {
         //@}
         //! \name Observable interface
         //@{
-        void deepUpdate() override;
         //@}
         //! \name Inspectors
         //@{
