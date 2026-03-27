@@ -121,3 +121,6 @@ nbproject
 .dir-locals.el
 Build.props
 Directory.Build.props
+
+# Windows NTFS zone identifier files (download metadata from browsers)
+*:Zone.Identifier
